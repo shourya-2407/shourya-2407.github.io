@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Hostel Gate </title>
+<link rel="stylesheet" href="room.css">
+</head>
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 52px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 4px;
+  cursor: pointer;
+}
+.button2 {background-color: #008CBA;}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  display: block;
+  float: center;
+  padding-left: 650px;
+  text-indent: -15px;
+}
+input {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  *overflow: hidden;
+}
+body {
+	background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/527a2105-b9a9-4486-9a2e-61c93abd4f1a/d4vjid1-587e3c01-4d4c-45e8-8b07-dbe92001f31f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTI3YTIxMDUtYjlhOS00NDg2LTlhMmUtNjFjOTNhYmQ0ZjFhXC9kNHZqaWQxLTU4N2UzYzAxLTRkNGMtNDVlOC04YjA3LWRiZTkyMDAxZjMxZi5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.s_D4KJvuXI2m4sDr8H75gg8MOxbfClRMMA2GCWDwwQI');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+}
+</style> 
+ <style>
+body {
+	background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/527a2105-b9a9-4486-9a2e-61c93abd4f1a/d4vjid1-587e3c01-4d4c-45e8-8b07-dbe92001f31f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTI3YTIxMDUtYjlhOS00NDg2LTlhMmUtNjFjOTNhYmQ0ZjFhXC9kNHZqaWQxLTU4N2UzYzAxLTRkNGMtNDVlOC04YjA3LWRiZTkyMDAxZjMxZi5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.s_D4KJvuXI2m4sDr8H75gg8MOxbfClRMMA2GCWDwwQI');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+}
+</style> 
+<body>
+<h1 style="text-align:center;">You did it !!! </h1>
+<h2 style="text-align:center;">Your very own ROOM. </h2>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<div class="text-box">
+    <span>N</span>
+    <span>E</span>
+    <span>X</span>
+    <span>T</span>
+    <span> </span>
+    <span>C</span>
+    <span>L</span>
+    <span>U</span>
+    <span>E</span>
+</div>
+<br>
+<img src="data:image/jpeg;base64,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" width="600" height="300">
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+<img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-pink-border-text-box-cartoon-caption-box-cute-bear-decoration-png-image_3866037.jpg" width="800" height="250"  class=”cropimg” >
+<div class="centered"><br>Sau bar vaha se bahar gujarte vakt <br> kabhi naqab utaro toh kabhi pehnoo... <br>Par hum konasa sunane walo mein se hai,<br> Kahi baato ko unsuna krna toh humari fitrat mein haii !!!</div>
+</div>
+<br>
+<form action="main_building.html">
+ 
+
+  <label><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>  1. Bus Stand</label>
+  <br>
+  <label><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>  2. College Ground</label>
+  <br>
+  <label><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>  3. Hostel Gate</label>
+  <br>
+  <label><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>  4. Mess</label>
+  <br>
+<div class="center">
+  <button class="button button2">Let's Go</button>
+</div>
+</form>
+</body>
+</html>
